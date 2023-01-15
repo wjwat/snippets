@@ -7,23 +7,27 @@
 
 {% macro toc() %}
   {% set section = get_section(path="_index.md") %}
+  {% set subsections = [] %}
   <details class="outer toc" open>
     <summary class="section site"> <a href="/">{{ config.title }}</a></li></summary>
+    {# We're doing all this to sort our TOC by section title :( #}
     {% for p in section.subsections %}
-      {{ macros::toc_stub(p=p) }}
+      {% set_global subsections = subsections | concat(with=get_section(path=p)) %}
+    {% endfor %}
+    {% for p in subsections | sort(attribute="title") %}
+      {{ macros::toc_stub(subsection=p) }}
     {% endfor %}
   </details>
 {% endmacro toc %}
 
-{% macro toc_stub(p) %}
+{% macro toc_stub(subsection) %}
   {# Guard for our 404 page #}
   {% if not current_path %}
     {% set current_path = "" %}
   {% endif %}
-  {% set subsection = get_section(path=p) %}
   <details class="toc"{% if subsection.path in current_path %} open{% endif %}>
   <summary class="section"> <a href="{{subsection.permalink}}">{{ subsection.title }}</a></summary>
-    {% for _s in subsection.subsections %}
+    {% for _s in subsection.subsections | sort(attribute="title") %}
       {{ macros::toc_stub(p=_s) }}
     {% endfor %}
     {% for page in subsection.pages %}

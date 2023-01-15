@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+{#
+<!-- Remove tera comments to debug context -->
+<pre><code>
+  {{ __tera_context }}
+</code></pre>
+#}
 <h1 class="title">
   {{ section.title }}
 </h1>
