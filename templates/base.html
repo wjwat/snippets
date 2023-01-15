@@ -1,0 +1,31 @@
+{% import "macros/macros.html" as macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <link rel="stylesheet" href="{{ get_url(path="site.css") }}">
+  <link rel="icon" href="{{ get_url(path="favicon.png") }}">
+</head>
+<body>
+  <div class="snippets">
+    <aside class="snippets__sidebar">
+      {{ macros::toc() }}
+    </aside>
+    <div class="snippets__content">
+      <div class="container">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="lil-guy">
+      <span class="before">༼ ºل͟º༼ ºل͟º</span>
+      (∩ᄑ_ᄑ)
+      <span class="after">ºل͟º ༽ºل͟º ༽</span>
+    </p>
+  </footer>
+</body>
+</html>
