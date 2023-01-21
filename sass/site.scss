@@ -19,7 +19,7 @@ $box-shadow-color: #2e2c2c;
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #023a3a;
-        --bg-lighter: #325d5d;
+        --bg-lighter: #406464;
         --font-color: #eefdf5;
     }
 }
@@ -51,6 +51,7 @@ main {
 
 h1.title {
     text-align: center;
+    text-decoration: underline;
 }
 
 footer {
@@ -152,10 +153,14 @@ pre {
     &:hover {
         font-weight: bolder;
         & > .before, & > .after {
-            color: black;
+            color: $font-color;
             font-weight: bold;
         }
     }
+}
+
+.mermaid-diagram {
+    text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
