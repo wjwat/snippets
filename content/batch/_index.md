@@ -10,3 +10,11 @@ SET str=%str:blah=foo%
 echo %str%
 :: foo foo foo
 ```
+
+---
+
+<dl>
+{% def(term="String Manipulation") %}
+<https://www.dostips.com/DtTipsStringManipulation.php>
+{% end %}
+</dl>
