@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://snippets.wjwat.org/</loc>
+    </url>
+    <url>
+        <loc>https://snippets.wjwat.org/batch/</loc>
+    </url>
+    <url>
+        <loc>https://snippets.wjwat.org/csharp/</loc>
+    </url>
+    <url>
+        <loc>https://snippets.wjwat.org/css/</loc>
+    </url>
+    <url>
+        <loc>https://snippets.wjwat.org/javascript/</loc>
+    </url>
+    <url>
+        <loc>https://snippets.wjwat.org/javascript/bookmarklets/</loc>
+    </url>
+    <url>
+        <loc>https://snippets.wjwat.org/mermaid/</loc>
+    </url>
+    <url>
+        <loc>https://snippets.wjwat.org/testing/</loc>
+    </url>
+</urlset>

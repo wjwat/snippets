@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snippets</title>
+  <link rel="stylesheet" href="https://snippets.wjwat.org/site.css">
+  <link rel="icon" href="https://snippets.wjwat.org/favicon.png">
+</head>
+<body>
+  <div class="snippets">
+    <aside class="snippets__sidebar">
+      
+  
+  
+  <details class="outer toc" open>
+    <summary class="section site"> <a href="/">Snippets</a></li></summary>
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+      
+  
+  
+  <details class="toc">
+  <summary class="section"> <a href="https:&#x2F;&#x2F;snippets.wjwat.org&#x2F;testing&#x2F;">-- testing</a></summary>
+    
+    
+  </details>
+
+    
+      
+  
+  
+  <details class="toc">
+  <summary class="section"> <a href="https:&#x2F;&#x2F;snippets.wjwat.org&#x2F;batch&#x2F;">Batch Scripts</a></summary>
+    
+    
+  </details>
+
+    
+      
+  
+  
+  <details class="toc">
+  <summary class="section"> <a href="https:&#x2F;&#x2F;snippets.wjwat.org&#x2F;csharp&#x2F;">C#</a></summary>
+    
+    
+  </details>
+
+    
+      
+  
+  
+  <details class="toc">
+  <summary class="section"> <a href="https:&#x2F;&#x2F;snippets.wjwat.org&#x2F;css&#x2F;">CSS &#x2F; SASS</a></summary>
+    
+    
+  </details>
+
+    
+      
+  
+  
+  <details class="toc" open>
+  <summary class="section"> <a href="https:&#x2F;&#x2F;snippets.wjwat.org&#x2F;javascript&#x2F;">JavaScript</a></summary>
+    
+    
+      <summary class="page active">
+        <a href="https:&#x2F;&#x2F;snippets.wjwat.org&#x2F;javascript&#x2F;bookmarklets&#x2F;">bookmarklets</a>
+      </summary>
+    
+  </details>
+
+    
+      
+  
+  
+  <details class="toc">
+  <summary class="section"> <a href="https:&#x2F;&#x2F;snippets.wjwat.org&#x2F;mermaid&#x2F;">Mermaid</a></summary>
+    
+    
+  </details>
+
+    
+  </details>
+
+    </aside>
+    <div class="snippets__content">
+      <div class="container">
+        
+<h1 class="title">
+  Bookmarklets
+</h1>
+<h2 id="readable">Readable</h2>
+<p>Convert most text to something more readable</p>
+<p>Source: <a href="https://www.arp242.net/bookmarklets.html">https://www.arp242.net/bookmarklets.html</a></p>
+<pre data-lang="js" class="language-js z-code"><code class="language-js" data-lang="js"><span class="z-source z-ts"><span class="z-entity z-name z-label z-ts">javascript</span><span class="z-punctuation z-separator z-label z-ts">:</span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-meta z-function z-expression z-ts"><span class="z-storage z-type z-function z-ts">function</span><span class="z-meta z-parameters z-ts"><span class="z-punctuation z-definition z-parameters z-begin z-ts">(</span><span class="z-punctuation z-definition z-parameters z-end z-ts">)</span></span> <span class="z-meta z-block z-ts"><span class="z-punctuation z-definition z-block z-ts">{</span>
+    <span class="z-meta z-function-call z-ts"><span class="z-support z-variable z-dom z-ts">document</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-function z-dom z-ts">querySelectorAll</span></span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>p, li, div<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-meta z-function-call z-ts"><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-function z-dom z-ts">forEach</span></span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-meta z-function z-expression z-ts"><span class="z-storage z-type z-function z-ts">function</span><span class="z-meta z-parameters z-ts"><span class="z-punctuation z-definition z-parameters z-begin z-ts">(</span><span class="z-variable z-parameter z-ts">n</span><span class="z-punctuation z-definition z-parameters z-end z-ts">)</span></span> <span class="z-meta z-block z-ts"><span class="z-punctuation z-definition z-block z-ts">{</span>
+        <span class="z-variable z-other z-object z-ts">n</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-variable z-property z-dom z-ts">style</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-variable z-property z-dom z-ts">color</span> <span class="z-keyword z-operator z-assignment z-ts">=</span> <span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>#000<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+        <span class="z-variable z-other z-object z-ts">n</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-variable z-property z-dom z-ts">style</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-variable z-other z-property z-ts">font</span> <span class="z-keyword z-operator z-assignment z-ts">=</span> <span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>500 16px/1.7em sans-serif<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+    <span class="z-punctuation z-definition z-block z-ts">}</span></span></span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+<span class="z-punctuation z-definition z-block z-ts">}</span></span></span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+</span></code></pre>
+<h2 id="fixed">Fixed</h2>
+<p>Convert fixed and sticky positioning to absolute</p>
+<p>Source: <a href="https://www.arp242.net/bookmarklets.html">https://www.arp242.net/bookmarklets.html</a></p>
+<pre data-lang="js" class="language-js z-code"><code class="language-js" data-lang="js"><span class="z-source z-ts"><span class="z-entity z-name z-label z-ts">javascript</span><span class="z-punctuation z-separator z-label z-ts">:</span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-meta z-function z-expression z-ts"><span class="z-storage z-type z-function z-ts">function</span><span class="z-meta z-parameters z-ts"><span class="z-punctuation z-definition z-parameters z-begin z-ts">(</span><span class="z-punctuation z-definition z-parameters z-end z-ts">)</span></span> <span class="z-meta z-block z-ts"><span class="z-punctuation z-definition z-block z-ts">{</span>
+    <span class="z-meta z-function-call z-ts"><span class="z-support z-variable z-dom z-ts">document</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-function z-dom z-ts">querySelectorAll</span></span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>*<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-meta z-function-call z-ts"><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-function z-dom z-ts">forEach</span></span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-meta z-function z-expression z-ts"><span class="z-storage z-type z-function z-ts">function</span><span class="z-meta z-parameters z-ts"><span class="z-punctuation z-definition z-parameters z-begin z-ts">(</span><span class="z-variable z-parameter z-ts">n</span><span class="z-punctuation z-definition z-parameters z-end z-ts">)</span></span> <span class="z-meta z-block z-ts"><span class="z-punctuation z-definition z-block z-ts">{</span>
+        <span class="z-meta z-var z-expr z-ts"><span class="z-storage z-type z-ts">var</span> <span class="z-meta z-var-single-variable z-expr z-ts"><span class="z-meta z-definition z-variable z-ts"><span class="z-variable z-other z-readwrite z-ts">p</span></span> </span><span class="z-keyword z-operator z-assignment z-ts">=</span> <span class="z-meta z-function-call z-ts"><span class="z-entity z-name z-function z-ts">getComputedStyle</span></span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-variable z-other z-readwrite z-ts">n</span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-meta z-function-call z-ts"><span class="z-punctuation z-accessor z-ts">.</span><span class="z-entity z-name z-function z-ts">getPropertyValue</span></span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>position<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-meta z-brace z-round z-ts">)</span></span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+        <span class="z-keyword z-control z-conditional z-ts">if</span> <span class="z-meta z-brace z-round z-ts">(</span><span class="z-variable z-other z-readwrite z-ts">p</span> <span class="z-keyword z-operator z-comparison z-ts">===</span> <span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>fixed<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span> <span class="z-keyword z-operator z-logical z-ts">||</span> <span class="z-variable z-other z-readwrite z-ts">p</span> <span class="z-keyword z-operator z-comparison z-ts">===</span> <span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>sticky<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-meta z-brace z-round z-ts">)</span> <span class="z-meta z-block z-ts"><span class="z-punctuation z-definition z-block z-ts">{</span>
+            <span class="z-variable z-other z-object z-ts">n</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-support z-variable z-property z-dom z-ts">style</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-variable z-other z-property z-ts">cssText</span> <span class="z-keyword z-operator z-assignment z-compound z-ts">+=</span> <span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span> ; position: absolute !important;<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+        <span class="z-punctuation z-definition z-block z-ts">}</span></span>
+    <span class="z-punctuation z-definition z-block z-ts">}</span></span></span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+<span class="z-punctuation z-definition z-block z-ts">}</span></span></span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-meta z-brace z-round z-ts">(</span><span class="z-meta z-brace z-round z-ts">)</span><span class="z-punctuation z-terminator z-statement z-ts">;</span>
+</span></code></pre>
+
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="lil-guy">
+      <span class="before">༼ ºل͟º༼ ºل͟º</span>
+      (∩ᄑ_ᄑ)
+      <span class="after">ºل͟º ༽ºل͟º ༽</span>
+    </p>
+  </footer>
+</body>
+</html>
