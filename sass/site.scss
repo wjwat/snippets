@@ -179,3 +179,15 @@ pre {
         }
     }
 }
+
+dl {
+    dt {
+        font-weight: bold;
+    }
+
+    dd {
+        p {
+            margin: 0.5rem 0;
+        }
+    }
+}
