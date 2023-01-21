@@ -1,0 +1,23 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mmdc": "mmdc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjwat/snippets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjwat/snippets/issues"
+  },
+  "homepage": "https://snippets.wjwat.org/",
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^9.3.0"
+  }
+}
