@@ -2,19 +2,7 @@
 title = "-- testing"
 +++
 
-{{ mmd(name="mermaid_ex1") }}
-
-{{ mmd(name="mermaid_ex2") }}
-
-{{ mmd(name="mermaid_ex3") }}
-
-{{ mmd(name="mermaid_ex4") }}
-
-{{ mmd(name="mermaid_ex5") }}
-
-{{ mmd(name="mermaid_ex6") }}
-
-{{ mmd(name="mermaid_ex7") }}
+Don't mind me, I'm just here to test out how things look as the site is developed.
 
 # blah blah blah
 

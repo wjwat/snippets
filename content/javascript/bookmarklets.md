@@ -33,3 +33,29 @@ javascript:(function() {
     });
 })();
 ```
+
+```js
+// Redirects to the actual image if you're looking at the images associated with a google map
+// business page so it can be downloaded. Google map -> search for business -> photos
+
+/*
+  // Cruft
+  const zed = window.APP_OPTIONS.flat(Infinity);
+  const stem = zed.find(e => typeof e === 'string' && e.includes('imagery/report'));
+*/
+javascript:(function() {
+  const currUrl = new URL(document.URL);
+  const imageKey = currUrl.searchParams.get('imagekey');
+  const url = "https://www.google.com/local/imagery/report/?cb_client=unknown_client.imagery_viewer&image_key=" + imageKey;
+
+  fetch(url)
+    .then(response => response.text())
+    .then(bodyText => {
+      const parser = new DOMParser();
+      const htmlDoc = parser.parseFromString(bodyText, 'text/html');
+
+      const imageUrl = htmlDoc.getElementById('preview-image').src;
+      window.location = imageUrl;
+    });
+})()
+```
