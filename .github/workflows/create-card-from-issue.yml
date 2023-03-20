@@ -6,7 +6,7 @@ on:
     
 env:
   GITHUB_REPO_PROJECT_NAME: Roadmap
-  COLUMN_FOR_NEW_CARDS: To do
+  COLUMN_FOR_NEW_CARDS: Todo
 
 
 name: Create project card from issue
