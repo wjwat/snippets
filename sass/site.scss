@@ -8,6 +8,7 @@ $background: var(--bg);
 $background-light: var(--bg-lighter);
 $border-color: black;
 $box-shadow-color: #2e2c2c;
+$sidebar-left-padding: 15px;
 
 @media (prefers-color-scheme: light) {
     :root {
@@ -167,6 +168,35 @@ footer {
         margin-right: 1rem;
         padding: 1rem 0 1rem 0rem;
         min-width: 20%;
+
+        &__hr {
+            margin-top: 1rem;
+            width: 80%;
+        }
+
+        &__toggle {
+            color: var(--a-color);
+            display: flex;
+            justify-content: center;
+        
+            &:hover {
+                color: var(--a-visited);
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            &::before {
+                content: "("
+            }
+            &::after {
+                content: ")"
+            }
+
+            &::before, &::after {
+                color: var(--font-color);
+                font-weight: bolder;
+            }
+        }
     }
 
     &__content {
@@ -178,7 +208,7 @@ footer {
 }
 
 .toc {
-    padding-left: 15px;
+    padding-left: $sidebar-left-padding;
     margin-bottom: 0px;
 
     .section {
