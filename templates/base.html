@@ -8,11 +8,14 @@
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   <link rel="stylesheet" href="{{ get_url(path="site.css") }}">
   <link rel="icon" href="{{ get_url(path="favicon.png") }}">
+  <script src="/script.js" defer></script>
 </head>
 <body>
   <div class="snippets">
     <aside class="snippets__sidebar">
       {{ macros::toc() }}
+      <hr class="snippets__sidebar__hr" />
+      <span class="snippets__sidebar__toggle" id="sidebarToggle"></span>
     </aside>
     <div class="snippets__content">
       <div class="container">
