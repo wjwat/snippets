@@ -31,7 +31,7 @@ Absolutely necessary if you're developing against multiple versions of node, or 
 
 ### ripgrep
 
-Blazingly fast grep. Before I became aquainted with IntelliJ's full text search I would use this to dive through the codebase. There are some uses cases where it's more flexible than the full text search, and can be composed with other command-line utils for fun & profit.
+Blazingly fast grep. Before I became aquainted with IntelliJs full text search I would use this to dive through the codebase. There are some uses cases where it's more flexible than the full text search, and can be composed with other command-line utils for fun & profit.
 
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
@@ -53,15 +53,16 @@ Everything will index your entire hard drive and allow you to search it quicky a
 
 ### ShareX
 
-ShareX is the swiss army knife of screenshot utility programs. You screen shot whole screens, windows, portions of windows, draw a box over what you'd like to screenshot, screen record gifs, videos, upload to any number of services after screenshotting/recording, the list goes on and on. There is an issue with high DPI monitors though that you can fix by following the instructions here: [hey dummy insert a link here]
+ShareX is the swiss army knife of screenshot utility programs. You screen shot whole screens, windows, portions of windows, draw a box over what you'd like to screenshot, screen record gifs, videos, upload to any number of services after screenshotting/recording, the list goes on and on. There is an issue with high DPI monitors though that you can fix by following the instructions in the link below.
 
 - [ShareX](https://getsharex.com/)
+- [ShareX High DPI Mouse Pointer Offset Fix](https://helgeklein.com/blog/sharex-free-screen-recording-tool-mouse-pointer-offset-high-dpi-fix/)
 
 ## REPLs
 
 ### JShell
 
-Java REPL that comes with the JDK. Great in a pinch to try something out without having the write out a full program, get your platform running and hit a breakpoint, or visit some slow online REPL.
+Java REPL that comes with the JDK. Great in a pinch to try something out without having to write out a full program, get your platform running and hit a breakpoint, or visit some slow online REPL.
 
 - [JShell](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm)
 
