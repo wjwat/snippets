@@ -13,8 +13,7 @@ echo %str%
 
 ---
 
-<dl>
-{% def(term="String Manipulation") %}
-<https://www.dostips.com/DtTipsStringManipulation.php>
-{% end %}
-</dl>
+## Useful Links
+
+- [String Manipulation](https://www.dostips.com/DtTipsStringManipulation.php)
+- [ss64: Windows CMD Shell How-to](https://ss64.com/nt/syntax.html)
