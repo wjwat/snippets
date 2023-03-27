@@ -1,4 +1,5 @@
 {% import "macros/macros.html" as macros %}
+{% import "macros/navmenu.html" as navmenu %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,12 +14,22 @@
 <body>
   <div class="snippets">
     <aside class="snippets__sidebar">
-      {{ macros::toc() }}
-      <hr class="snippets__sidebar__hr" />
-      <span class="snippets__sidebar__toggle" id="sidebarToggle"></span>
+      <div class="snippets__toc">
+        {{ macros::toc() }}
+        <hr class="snippets__toc__hr" />
+        <span class="snippets__toc__toggle" id="tocToggle"></span>
+      </div>
+      {{ navmenu::navmenu() }}
     </aside>
     <div class="snippets__content">
       <div class="container">
+      <h1 class="title">
+        {% if page.title %}
+          {{ page.title }}
+        {% elif section.title %}
+          {{ section.title }}
+        {% endif %}
+      </h1>
         {% block content %}{% endblock %}
       </div>
     </div>

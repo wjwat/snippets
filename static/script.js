@@ -1,5 +1,5 @@
 (() => {
-    const toggle = document.querySelector('#sidebarToggle');
+    const toggle = document.querySelector('#tocToggle');
     let isToggled = false;
 
     const toggleText = () => {
