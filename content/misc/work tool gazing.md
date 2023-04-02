@@ -85,3 +85,11 @@ This is where the magic happens. Photoshop light.
 Magic happens here too, but this time it's from the command-line.
 
 - [ImageMagick](https://imagemagick.org/)
+
+## Text Editor
+
+### Micro
+
+Good for editing files in the terminal.
+
+- [micro](https://github.com/zyedidia/micro)
